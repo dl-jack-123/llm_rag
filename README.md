@@ -1,0 +1,36 @@
+# LLM + RAG Example
+
+This is a simple example of implementing a Retrieval Augmented Generation (RAG) system using LangChain, FAISS, and Google's Gemini model.
+
+## Setup
+
+1. Create a virtual environment and activate it:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file in the root directory and add your Google API key:
+```
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+## Usage
+
+The example code in `rag_example.py` demonstrates:
+- Loading and splitting documents
+- Creating embeddings using Vertex AI
+- Storing vectors in FAISS
+- Querying the RAG system using Gemini
+
+To run the example:
+```bash
+python rag_example.py
+```
+
+The example includes a sample text file, but you can modify the code to load your own documents and ask different questions.
