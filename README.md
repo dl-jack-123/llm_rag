@@ -33,4 +33,4 @@ To run the example:
 python rag_example.py
 ```
 
-The example includes a sample text file, but you can modify the code to load your own documents and ask different questions.
+以上範例拿 uv package 來當作例子> 通常 uv 會稱呼為紫外線, 但經過 rag 後, 回答為趨近預期中的答案

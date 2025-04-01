@@ -66,20 +66,27 @@ def main():
     # First, create a sample document
     with open("sample.txt", "w") as f:
         f.write("""
-        Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, 
-        especially computer systems. These processes include learning (the acquisition of information 
-        and rules for using the information), reasoning (using rules to reach approximate or definite 
-        conclusions) and self-correction.
-
-        Machine Learning (ML) is a subset of AI that provides systems the ability to automatically 
-        learn and improve from experience without being explicitly programmed.
+        An extremely fast Python package and project manager, written in Rust.
+        Highlights
+        A single tool to replace pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv, and more.
+        10-100x faster than pip.
+        Provides comprehensive project management, with a universal lockfile.
+        Runs scripts, with support for inline dependency metadata.
+        Installs and manages Python versions.
+        Runs and installs tools published as Python packages.
+        Includes a pip-compatible interface for a performance boost with a familiar CLI.
+        Supports Cargo-style workspaces for scalable projects.
+        Disk-space efficient, with a global cache for dependency deduplication.
+        Installable without Rust or Python via curl or pip.
+        Supports macOS, Linux, and Windows.
+        uv is backed by Astral, the creators of Ruff.
         """)
     
     # Load the document
     rag.load_documents(["sample.txt"])
     
     # Example query
-    question = "What is the relationship between AI and ML?"
+    question = "What is uv?"
     print(f"Question: {question}")
     answer = rag.query(question)
     print(f"Answer: {answer}")
